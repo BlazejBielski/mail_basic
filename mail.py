@@ -16,7 +16,7 @@ password = os.environ.get('SMTP_PASSWORD', '<PASSWORD>')
 list_of_addresses = []
 
 message = f"""\
-From: michal.sarzala@aluvisagrupo.com
+From: {sender_email}
 To: {receiver_email}
 MIME-Version: 1.0
 Content-Type: text/html; charset=utf-8
@@ -27,7 +27,7 @@ Subject: Bardzo wazny mail
 <b>{datetime.now()}</b>
 
 Pozdrawiam
-Michal Sarzala
+name 
 
 """
 
